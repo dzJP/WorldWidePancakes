@@ -61,7 +61,7 @@ a {
     background-color: #385F4E;
 	padding: 1rem;
 	margin-right: 5px;
-	border-radius: 5px;
+	border-radius: 2px;
 	overflow: hidden;
 	transform: translateX(-100%);
 	animation: slideIn 1s ease forwards;

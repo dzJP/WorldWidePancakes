@@ -21,7 +21,7 @@ export default {
     border: none;
     padding: 10px;
     transition: background-color 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-decoration: none;
 }
 

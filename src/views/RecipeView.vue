@@ -11,6 +11,9 @@
 						{{ recipe.timeInMins }} Minuter
 					</p>
 				</div>
+				<div class="description-content">
+					<p>{{ recipe.description }}</p>
+				</div>
 				<div class="recipe-ingredients" v-if="recipe.ingredients && recipe.ingredients.length > 0">
 					<h3>Ingredienser</h3>
 					<ul>
@@ -19,15 +22,7 @@
 						</li>
 					</ul>
 				</div>
-			</section>
-
-			<section class="recipe-description">
-				<div class="description-content">
-					<p>{{ recipe.description }}</p>
-				</div>
-				<div class="image-ingredients-container">
-					<img :src="recipe.imageUrl" alt="Recipe Image" class="recipe-image" />
-					<div class="recipe-instructions">
+				<div class="recipe-instructions">
 						<h3>Gör så här</h3>
 						<ol>
 							<li v-for="(step, index) in recipe.instructions" :key="index">
@@ -35,6 +30,10 @@
 							</li>
 						</ol>
 					</div>
+			</section>
+			<section class="recipe-description">
+				<div class="image-ingredients-container">
+					<img :src="recipe.imageUrl" alt="Recipe Image" class="recipe-image" />
 				</div>
 			</section>
 		</main>
@@ -167,14 +166,6 @@ export default {
 	align-self: flex-start;
 }
 
-.recipe-ingredients {
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 1rem;
-	border-radius: 50px;
-	max-width: 300px;
-}
-
 .recipe-ingredients h3 {
 	margin-bottom: 1rem;
 }
@@ -186,57 +177,9 @@ export default {
 	margin-right: 20px;
 }
 
-.recipe-description .recipe-image {
-	width: 100%;
-	height: 30dvw;
-	border-radius: 20px;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.recipe-instructions, .description-content {
-	max-width: 50dvw;
-	background-color: #19a413;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 1rem;
-	border-radius: 10px;
-	margin-top: 20px;
-	text-align: start;
-	text-shadow: 1px 1px #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	color: #F3FAFF;
-	border-top: 2px solid #F3FAFF;
-    border-right: 2px solid #F3FAFF;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
-
-.recipe-instructions h3 {
-	margin-bottom: 1rem;
-}
-
-.section-recipe,
-.section-recipe-rating-container {
-	background-color: #19a413;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 1rem;
-	color: #F3FAFF;
-	text-shadow: 1.5px 1.5px #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	max-width: 300px;
-	text-align: center;
-	border-top: 2px solid #F3FAFF;
-    border-right: 2px solid #F3FAFF;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-
-}
-
-.recipe-description.section-recipe {
-	background-image: none;
+.section-recipe {
+	font-size: 24px;
+	margin-left: 20px;
 }
 
 .center-content {
@@ -246,21 +189,4 @@ export default {
 	height: 50px;
 }
 
-.description-content {
-	width: 100%;
-	max-width: 50dvw;
-	background-color: #19a413;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-bottom: 10px;
-	border-radius: 10px;
-	text-align: center;
-	text-shadow: 1.5px 1.5px #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	color: #F3FAFF;
-	border-top: 2px solid #F3FAFF;
-    border-right: 2px solid #F3FAFF;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-}
 </style>
