@@ -5,28 +5,28 @@
 			<!-- Input for Comment -->
 			<div>
 				<!-- <label for="comment">Comment:</label> -->
-				<textarea v-model="comment" id="comment" placeholder="Fyll i kommentar..."></textarea>
+				<textarea v-model="comment" id="comment" placeholder="Enter a comment.."></textarea>
 				<!-- <span v-if="!comment">Leave a comment</span> -->
 			</div>
 			<!-- Input for Name -->
 			<div>
 				<!-- <label for="name">Namn:</label> -->
-				<input v-model="name" type="text" id="name" placeholder="Skriv namn...">
+				<input v-model="name" type="text" id="name" placeholder="Write your name...">
 				<!-- <span v-if="!name">Enter</span> -->
 
 			</div>
 			<!-- Submit Button -->
-			<button :disabled="formDisabled" type="submit" :title="formDisabled ? 'Var god och fyll i alla fält.' : ''">
+			<button :disabled="formDisabled" type="submit" :title="formDisabled ? 'Please fill in all fields' : ''">
 				Skicka
 			</button>
 		</form>
 
 		<!-- Comment Confirmation -->
-		<p v-else>Tack för din kommentar!</p>
+		<p v-else>Thank you for your comment!</p>
 
 		<!-- Display Previous Comments -->
 		<div v-if="comments.length > 0">
-			<h2>Tidigare kommentarer:</h2>
+			<h2>Previous comments</h2>
 			<ul>
 				<li v-for="comment in comments" :key="comment.id">
 					<p><strong>{{ comment.name }}:</strong> {{ comment.text }}</p>
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 </template>
-  
+
 <script>
 export default {
 	data() {

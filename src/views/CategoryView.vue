@@ -14,7 +14,7 @@
 		</main>
 	</div>
 </template>
-  
+
 <script>
 import HeaderComponent from '../components/HeaderComponent.vue';
 import NavbarComponent from '../components/NavbarComponent.vue';

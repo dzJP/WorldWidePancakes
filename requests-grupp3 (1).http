@@ -1,0 +1,1024 @@
+# Ändra localhost:4000 till er grupps basurl som ni fått.
+@baseUrl=https://jau22-recept-grupp3-j35j900nj4w3.reky.se
+
+# Fetch all recipes
+GET {{baseUrl}}/recipes HTTP/1.1
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Swedish pancakes",
+    "description": "A simple basic recipe for thin pancakes. Fry and serve with jam, whipped cream, ice cream, or quark",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://cdn-rdb.arla.com/Files/arla-se/3249856695/3a50bf71-8585-4719-93bb-014eaea05a6b.jpeg?w=1269&h=715&mode=crop&ak=f525e733&hm=b762ca1a",
+    "timeInMins": 30,
+    "categories": [ "Europe"],
+    "instructions": [ "Mix the ingredients", "Pour the batter", "Fry", "Enjoy"],
+    "ingredients": [
+        {
+            "name": "Butter",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 225,
+            "unit": "grams"
+        },
+        {
+            "name": "Eggs",
+            "amount": 3,
+            "unit": "pieces"
+        },
+        {
+            "name": "Flour",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {
+            "name": "Milk",
+            "amount": 6,
+            "unit": "dl"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Japanese pancakes",
+    "description": "Sweet little pancakes that feel like fluffy clouds in the mouth. Delicious as they are, but preferably served with the sweet-salty butter and fresh berries. Serve the pancakes freshly baked.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://iamafoodblog.b-cdn.net/wp-content/uploads/2019/02/japanese-fluffy-pancakes-recipe-7087-2.jpg",
+    "timeInMins": 45,
+    "categories": [ "Asia"],
+    "instructions": [ "Mix egg yolks, semi-skimmed milk and oil in a bowl using a blender.", "Add flour and vanilla sugar and mix for an additional 1-2 minutes.",
+    "Whip egg whites in another bowl, preferably glass or metal, until they form a firm foam using an electric mixer. Gradually add the sugar while continuing to whisk until you get a firm and glossy meringue mixture.",
+    "Gently fold the meringue into the egg yolk mixture in four batches using a spatula – work carefully and try to retain as much air in the batter as possible.",
+    "Melt some butter over low heat in a non-stick pan. Pipe or spoon small, thick pancakes into the pan (about 1/2 deciliters per pancake) and cook for about 4 minutes on each side. Flip them carefully; they are very delicate. When cooking the other side, you can cover them with a lid so that the sides of the pancakes cook as well.",
+    "Serve the pancakes with butter, honey, and fresh berries."],
+    "ingredients": [
+        {
+            "name": "Egg yolks",
+            "amount": 2,
+            "unit": "pieces"
+        },
+        {
+            "name": "Milk",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Cooking oil",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Wheat flour",
+            "amount": 0.75,
+            "unit": "dl"
+        },
+        {
+            "name": "Vanilla sugar",
+            "amount": 0.5,
+            "unit": "tsp"
+        },
+        {
+            "name": "Egg whites",
+            "amount": 4,
+            "unit": "pieces"
+        },
+        {
+            "name": "Granulated sugar",
+            "amount": 4,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "pinch"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Moroccan pancakes",
+    "description": "The fluffiest pancakes you can imagine and one of the easiest and most delicious dishes you can make for your family",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://silkroadrecipes.com/wp-content/uploads/2021/04/Baghrir-Moroccan-Pancakes16-768x1075.jpg",
+    "timeInMins": 35,
+    "categories": [ "Africa"],
+    "instructions": [ "Mix all dry ingredients in a bowl.", "Add 5-6 dl of water, a little at a time, while stirring - save about 1 dl for later.",
+    "Mix the batter until smooth directly in the bowl using a hand blender. Cover the bowl with a kitchen towel and let the batter rise for 45 minutes to 1 hour.",
+    "When it's fully risen, it should be bubbly on the surface and quite thick. Add the reserved water and stir until a thin, smooth batter forms.",
+    "Heat a dry frying pan (without oil or butter).",
+    "Pour a ladle of batter into the pan and bake the pancake – it should only be baked on one side. First, bubbles will form on the surface, and then the pancake will become dry. Transfer it to a large plate with a kitchen towel on it. Repeat the process with the remaining batter. It's important that the pancakes don't overlap, as they will stick together.",
+    "Serve the pancakes with either honey and butter or with fresh berries and syrup."],
+    "ingredients": [
+        {
+            "name": "Semolina",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {
+            "name": "Dry yeast",
+            "amount": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "Water (lukewarm)",
+            "amount": 6,
+            "unit": "dl"
+        },
+        {
+            "name": "Wheat flour",
+            "amount": 1.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Baking powder",
+            "amount": 2,
+            "unit": "tsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 2,
+            "unit": "pinch"
+        },
+        {
+            "name": "Vanilla sugar",
+            "amount": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "pinch"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Ethiopian pancakes",
+    "description": "Delicious and gluten-free pancakes that are a perfect accompaniment to Ethiopian meat and vegetable stews.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://img.koket.se/standard-mega/etiopiska-pannkakor.png.jpg",
+    "timeInMins": 35,
+    "categories": [ "Africa"],
+    "instructions": [ "Mix the dry ingredients.", "Then whisk in the eggs and water.", "Let it swell for 20 minutes.",
+    "Fry thin pancakes from the batter in a little oil. Fry only on one side until the top bubbles and dries out.",
+    "Keep the pancakes warm under a towel in the oven at 70 degrees Celsius while you finish frying the rest." ],
+    "ingredients": [
+        {
+            "name": "Gluten-free Flour Mix",
+            "amount": 3.75,
+            "unit": "dl"
+        },
+        {
+            "name": "Teff Flour (or Buckwheat Flour)",
+            "amount": 3.75,
+            "unit": "tsp"
+        },
+        {
+            "name": "Baking Powder",
+            "amount": 2,
+            "unit": "tsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 1.5,
+            "unit": "tsp"
+        },
+        {
+            "name": "Eggs",
+            "amount": 2,
+            "unit": "pieces"
+        },
+        {
+            "name": "Sparkling Water",
+            "amount": 7.5,
+            "unit": "dl"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Somali pancakes",
+    "description": "Somali pancakes fried in oil with a flavor of cardamom. Lovely to serve freshly fried for breakfast with honey and a cup of tea",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://shared.cdn.smp.schibsted.com/v2/images/d2c49563-6f20-42a2-87bd-10342890c77f?fit=crop&h=750&w=1000&s=8a09086ea35b9359085ab1ca9e846d17373d6386",
+    "timeInMins": 15,
+    "categories": [ "Africa"],
+    "instructions": [ "Mix flour, sugar, cardamom, and salt in a bowl.","Whisk eggs in another bowl and add semi-skimmed milk, oil, and pour over the flour mixture little by little.",
+    "Stir until the batter is lump-free. Heat up oil or butter in a frying pan and fry the pancakes until they are golden brown. Brush with butter before flipping. Repeat until you have used all the batter.",
+    "Serve with optional accompaniments. In Somalia, they are eaten with butter and sugar, but they also go well with jam and cream."],
+    "ingredients": [
+        {
+            "name": "Flour",
+            "amount": 4,
+            "unit": "dl"
+        },
+        {
+            "name": "Milk",
+            "amount": 6,
+            "unit": "dl"
+        },
+        {
+            "name": "Cardamom(ground)",
+            "amount": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "Sugar",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Oil",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Eggs",
+            "amount": 2,
+            "unit": "pieces"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Sudanese pancakes",
+    "description": "The batter should be whisked together the day before the pancakes are cooked. You should use cornmeal for the batter, not cornstarch.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://img.koket.se/standard-mega/majspannkaka-fran-sudan.jpg.webp",
+    "timeInMins": 15,
+    "categories": [ "Africa"],
+    "instructions": [ "Whisk together flour and salt and half of the water until smooth. Gradually whisk in the remaining water and then let the batter stand in a cool place until the next day.",
+    "Heat up a frying pan and melt some butter in it. Pour in the batter and cook the pancake until the batter has set. Flip and cook until done on the other side. Transfer the pancakes to a warm plate and serve them freshly cooked." ],
+    "ingredients": [
+        {
+            "name": "Cornmeal",
+            "amount": 4,
+            "unit": "dl"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "pinch"
+        },
+        {
+            "name": "Water",
+            "amount": 6,
+            "unit": "dl"
+        },
+        {
+            "name": "Butter(for frying)",
+            "amount": 3,
+            "unit": "tbsp"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Polish Pancakes",
+    "description": "An easy recipe that produces delicious pancakes with a perfect balance of cinnamon and apple. A classic delicacy to treat your loved ones with.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://ilovebake.pl/wp-content/uploads/2015/01/nalesniki-z-jablkami-i-cynamonem-9.jpg",
+    "timeInMins": 30,
+    "categories": ["Europe"],
+    "instructions": [
+        "Mix flour, dry yeast, vanilla sugar, sugar, and salt in a bowl. Alternatively, dissolve fresh yeast in some milk first. Add lukewarm milk and whisk the batter until smooth with a hand whisk. Add the eggs and whisk a little more. Then cover the bowl and let the batter rise at room temperature for 1 hour.",
+        "Peel and finely chop the apples, dice them into small cubes. Gently fold into the batter, being careful not to overmix, try to keep the batter fluffy.",
+        "Heat oil in a frying pan and spoon in the batter. Fry the pancakes until golden, about 3 minutes on each side. Be careful not to have the oil too hot, as the pancake may be cooked on the outside but still raw in the middle. Let the pancakes drain on paper. Dust with powdered sugar and serve with jam."
+    ],
+    "ingredients": [
+        {
+            "name": "Wheat flour",
+            "amount": 2.1,
+            "unit": "dl"
+        },
+        {
+            "name": "Eggs",
+            "amount": 3,
+            "unit": "pieces"
+        },
+        {
+            "name": "Water (lukewarm)",
+            "amount": 2.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Milk (lukewarm)",
+            "amount": 1.25,
+            "unit": "dl"
+        },
+        {
+            "name": "Butter",
+            "amount": 100,
+            "unit": "grams"
+        },
+        {
+            "name": "Sugar",
+            "amount": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Apple",
+            "amount": 3,
+            "unit": "pieces"
+        },
+        {
+            "name": "Vanilla extract",
+            "amount": 0.5,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Cinnamon",
+            "amount": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Granulated sugar",
+            "amount": 2,
+            "unit": "tbsp"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "German Pancakes",
+    "description": "Fluffy as a cloud, this delicious pancake is baked directly in the pan. With sweet blueberries and tangy lemon curd, you can serve it for breakfast, brunch, or snack.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://shared.cdn.smp.schibsted.com/v2/images/5b1505f1-f486-421f-ae33-ecb14f80a93c?fit=crop&h=664&w=1000&s=5d0312d7af80917bf2a6e6cf18d11352eaa9b294",
+    "timeInMins": 25,
+    "categories": ["Europe"],
+    "instructions": [
+        "Preheat the oven to 220 degrees Celsius.",
+        "Heat milk in a saucepan.",
+        "Place a knob of butter in an ovenproof dish. Put it in the oven and let the butter melt.",
+        "Mix together eggs, flour, sugar, and salt. Stir in the warm milk.",
+        "Remove the oven dish and pour in the batter. Place it in the middle of the oven and let it swell for about 15 minutes. When it's fluffy and golden, it's ready. If you like, you can use several smaller portion dishes.",
+        "Let it sink in the middle and spread with lemon curd, top with blueberries, and dust with powdered sugar. Serve immediately."
+    ],
+    "ingredients": [
+        {
+            "name": "Flour",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Eggs",
+            "amount": 3,
+            "unit": "pieces"
+        },
+        {
+            "name": "Lemon curd",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Milk",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Butter",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Sugar",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "pinch"
+        },
+        {
+            "name": "Blueberries",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {
+            "name": "Powdered sugar",
+            "amount": 1,
+            "unit": "tbsp"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Brazilian Pancakes",
+    "description": "Vegan and vegetarian without eggs. A delicacy! Crispy and delicious with flavorings and toppings like peanut butter, sliced banana, and grated chocolate.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://receptfavoriter.se/sites/default/files/tapioca_65_980_4.jpg",
+    "timeInMins": 25,
+    "categories": ["South America"],
+    "instructions": [
+        "Use a large mixing bowl and mix almost all tapioca flour with water or juice until it forms a grainy mass. A tip is not to add all the flour at once if you get too much liquid. Knead and work together for a few minutes by hand until the starch has absorbed the liquid and becomes a crumbly dough. The humidity should be 40-45%.",
+        "Prepare and prepare other ingredients such as desired toppings. For example, slice bananas and prepare fruit or other spreads and toppings.",
+        "Heat a frying pan to slightly above medium heat.",
+        "Strain and press through the flour directly over the frying pan so that it covers the bottom of the frying pan in a few mm thick layer - optional how thick. Use a sieve or colander.",
+        "After about a minute, the edges of the pancake begin to lift, and then you can turn it over.",
+        "Fry for another 30 seconds.",
+        "Top with desired toppings. For example, spread peanut butter, sliced banana, and grate chocolate over it."
+    ],
+    "ingredients": [
+        {
+            "name": "Tapioca flour",
+            "amount": 500,
+            "unit": "grams"
+        },
+        {
+            "name": "Baking powder",
+            "amount": 0.5,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Liquid (water, raw juice, fruit or berry juice, or vegetable juice)",
+            "amount": 2.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Seeds (chia seeds, sesame seeds, coconut, and flax seeds) (optional)",
+            "amount": 0.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Peanut butter",
+            "amount": 1,
+            "unit": "dl"
+        },
+        {
+            "name": "Sliced bananas",
+            "amount": 2,
+            "unit": "pieces"
+        },
+        {
+            "name": "Grated chocolate",
+            "amount": 30,
+            "unit": "grams"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Venezuelan Pancakes",
+    "description": "These sweet corn pancakes from Venezuela make the perfect breakfast. Cachapas are made with simple ingredients - fresh corn, a little butter, cream, and salt - and are a great alternative to the average flour-based pancake.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://idata.hiloved.com/imgs/672a61b433c2343c-1024x681.jpg",
+    "timeInMins": 25,
+    "categories": [ "South America"],
+    "instructions": [ "Place corn, cream, salt, and melted butter in a food processor or blender. Process until you have a fairly smooth, thick batter.",
+    "Heat a lightly oiled frying pan over low heat. Add about 1/4 to 1/3 cup of batter to the pan. Spread it with a spatula to create a circle.",
+    "Cook pancake until it starts to bubble and the spatula can easily slide underneath it.",
+    "Flip the pancake and cook for several minutes on the other side. Keep the heat low, or the outside of the pancake will burn before the inside is fully cooked.",
+    "Continue to cook pancakes until you have used all the batter.",
+    "Spread the pancakes with butter and cream cheese or top with grated queso fresco cheese. Fold the pancakes in half and serve." ],
+    "ingredients": [
+        {
+            "name": "Corn(fresh or frozen kernels)",
+            "amount": 3,
+            "unit": "cups"
+        },
+        {
+            "name": "Cream",
+            "amount": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Cornstarch",
+            "amount": 1.25,
+            "unit": "cup"
+        },
+        {
+            "name": "Butter(melted)",
+            "amount": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "tsp"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Argentinian Pancakes",
+    "description": "These perfectly soft and tender Panqueques Con Dulce De Leche are every caramel lover's dream whether you like them for breakfast or dessert!",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://bakeitwithlove.com/wp-content/uploads/2020/11/Panqueques-con-Dulce-de-Leche-sm.jpg.webp",
+    "timeInMins": 45,
+    "categories": [ "South America"],
+    "instructions": [ "In a large mixing bowl, add the dry ingredients including all-purpose flour, sugar, and salt.",
+    "Whisk the dry ingredients to evenly distribute the sugar and salt.", "Add the wet ingredients including milk and eggs.",
+    "Mix the ingredients, whisk until the batter is smooth. The batter should pour from your spoon like heavy cream, neither too watery nor too thick like pancake batter.",
+    "Cover the bowl with plastic wrap, refrigerate, and set the batter aside to rest for 30 minutes, up to an hour, and even overnight.",
+    "---> Cook Panqueques (Crepes) <----", "Heat your skillet or frying pan over medium heat. Once heated, lightly brush with butter or oil. * Apply the butter or oil again as needed between cooking the crepes.",
+    "Whisk the batter before using as the flour settles while the batter rests. Using a ¼ cup measuring cup or ladle, pour out crepe batter onto your heated skillet or griddle and then tilt the pan to spread the batter out. Cook for about a minute on the first side until golden in color and a spatula slides under the crepe edges (without sticking).",
+    "Flip your crepe and cook the other side for about 1 minute or until a light golden brown color. Remove from heat and repeat with remaining crepe batter. Stack the cooked crepes on top of each other on a plate until all crepes are cooked.",
+    "Serve crepes, either warm or at room temperature, with a generous layer of dulce de leche spread on each crepe. Roll, fold, or stack the crepes to serve. Sprinkle with powdered sugar, whipped cream, and fresh fruit, or warm the remaining dulce de leche to drizzle over each serving." ],
+    "ingredients": [
+        {
+            "name": "Flour",
+            "amount": 3,
+            "unit": "cups"
+        },
+        {
+            "name": "Sugar",
+            "amount": 3,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 1.5,
+            "unit": "tsp"
+        },
+        {
+            "name": "Eggs(large)",
+            "amount": 9,
+            "unit": "pieces"
+        },
+        {
+            "name": "Milk",
+            "amount": 6,
+            "unit": "cups"
+        },
+        {
+            "name": "Dulce de leche",
+            "amount": 1,
+            "unit": "can"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "American Pancakes",
+    "description": "Luxurious weekend breakfast, brunch, or lunch. These small, thick, and fluffy pancakes are always appreciated among guests.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://img.koket.se/standard-mega/bob-klassiska-amerikanska-pannkakor.jpg.webp",
+    "timeInMins": 30,
+    "categories": [ "North America"],
+    "instructions": [ "Melt the butter. Mix all the dry ingredients in a bowl. Then whisk in the melted butter, milk, and eggs. Whisk until the batter is completely smooth without lumps.",
+    "Heat a frying pan with a little butter and bake small fine pancakes. You may need to grease the pan between pancakes.", "Serve with maple syrup, BOB JUST BERRIES & Fruit, and possibly some fresh blueberries." ],
+    "ingredients": [
+        {
+            "name": "Flour",
+            "amount": 2.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Baking Powder",
+            "amount": 2,
+            "unit": "tsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "pinch"
+        },
+        {
+            "name": "Granulated Sugar",
+            "amount": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Milk",
+            "amount": 2.5,
+            "unit": "dl"
+        },
+        {
+            "name": "Butter",
+            "amount": 25,
+            "unit": "grams"
+        },
+        {
+            "name": "Blueberries",
+            "amount": 125,
+            "unit": "grams"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Mexican Pancakes",
+    "description": "A blend between tacos and oven pancake results in the best of both worlds.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://shared.cdn.smp.schibsted.com/v2/images/93a2613a-aada-45cc-924d-d82c30ff4c91?fit=crop&h=750&w=1000&s=cb957d59d256b27ee998b3aacf7b8dee84038546",
+    "timeInMins": 45,
+    "categories": [ "North America"],
+    "instructions": [ "Peel and cut the carrots into short sticks.", "Rinse, trim, and cut the cauliflower head into florets.", "Peel and slice the leek and parsnip.",
+    "Slice the bacon into strips and fry it crispy in its own fat.", "Add the green vegetables and let them fry for a few minutes.", "Spread the bacon mixture in a large ovenproof dish or baking sheet.",
+    "Whisk together eggs, milk, flour, Tex-Mex seasoning, and salt. Pour the batter over the vegetables and bacon.", "Bake for about 30 minutes at 225 degrees Celsius. Let it rest for a few minutes and then serve with tomato and onion salad and bread." ],
+    "ingredients": [
+        {
+            "name": "Carrots",
+            "amount": 4,
+            "unit": "pieces"
+        },
+        {
+            "name": "Leek",
+            "amount": 1,
+            "unit": "piece"
+        },
+        {
+            "name": "Parsnip",
+            "amount": 1,
+            "unit": "piece"
+        },
+        {
+            "name": "Bacon",
+            "amount": 140,
+            "unit": "grams"
+        },
+        {
+            "name": "Eggs",
+            "amount": 3,
+            "unit": "pieces"
+        },
+        {
+            "name": "Milk",
+            "amount": 8,
+            "unit": "dl"
+        },
+        {
+            "name": "Flour",
+            "amount": 4,
+            "unit": "dl"
+        },
+        {
+            "name": "Tex-Mex seasoning",
+            "amount": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 0.5,
+            "unit": "tsp"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Canadian Pancakes",
+    "description": "This dish could probably be considered one of the country's national dishes and would be well suited for Canada Day on July 1st.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iuKQtpSlTQ8k/v0/-1x-1.jpg",
+    "timeInMins": 35,
+    "categories": [ "North America"],
+    "instructions": [ "Melt the butter and then add the milk. Whisk in the eggs. Mix flour, baking powder, salt, sugar, and cardamom in a bowl.",
+    "Pour the liquid while whisking constantly. Let the pancake batter stand and thicken for about 15 minutes. This is important to get the right consistency.",
+    "To fry pancakes with a diameter of about 15 cm, pour 1.5–2 tbsp of batter into a lightly greased frying pan. When the batter bubbles up and gets bubbles on the surface, flip the pancake with a spatula and cook it on the other side.",
+    "Stack the cooked pancakes with thick slices of Jarlsberg® cheese in between on a serving platter or plate. Drizzle with maple syrup and serve." ],
+    "ingredients": [
+        {
+            "name": "Butter",
+            "amount": 50,
+            "unit": "grams"
+        },
+        {
+            "name": "Milk",
+            "amount": 2.25,
+            "unit": "dl"
+        },
+        {
+            "name": "Salt",
+            "amount": 0.5,
+            "unit": "tsp"
+        },
+        {
+            "name": "Eggs",
+            "amount": 2,
+            "unit": "pieces"
+        },
+        {
+            "name": "Baking Powder",
+            "amount": 2,
+            "unit": "tsp"
+        },
+        {
+            "name": "Flour",
+            "amount": 3,
+            "unit": "dl"
+        },
+        {
+            "name": "Sugar",
+            "amount": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Cardamom",
+            "amount": 1,
+            "unit": "tsp"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Vietnamese Pancakes",
+    "description": "These Vietnamese pancakes, called Banh Xeo, are filled with crab and vegetables. They work for breakfast, lunch, or dinner!",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://img.koket.se/standard-mega/vietnamesiska-pannkakor.png.jpg",
+    "timeInMins": 30,
+    "categories": [ "Asia"],
+    "instructions": [ "Mix rice flour, sugar, salt, and turmeric in a large bowl with coconut cream. Whisk in the water gradually. Let the batter rest for 10 minutes.", "Before frying the pancakes, prepare the filling.",
+    "Heat a tablespoon of oil in a wok, sauté the shallots over low heat until they become translucent but without browning.", "Transfer the onion mixture to a bowl and add fish sauce, sesame oil, bean sprouts, and crab meat. Mix and season with salt and ground white pepper.",
+    "Heat the wok again and add 2 tablespoons of oil, when the oil starts smoking, remove it from the heat and cover the surface with oil by tilting the wok from side to side.", "Pour out any excess oil and wipe the wok with paper towels. The trick is to get a thin film of oil that allows the pancake batter to cover the wok without sticking while the pancake is cooking.",
+    "Pour about 1 dl of batter into the wok and tilt it so that the entire wok is covered with a thin layer of batter, cook until the inside is set and the underside is golden brown.", "Fold the pancake in half and place it on a serving plate, spoon in a quarter of the filling, and serve with lettuce leaves, herbs, and dipping sauce on the side." ],
+    "ingredients": [
+        {
+            "name": "Rice Flour",
+            "amount": 150,
+            "unit": "grams"
+        },
+        {
+            "name": "Granulated Sugar",
+            "amount": 0.5,
+            "unit": "tsp"
+        },
+        {
+            "name": "Salt",
+            "amount": 0.5,
+            "unit": "tsp"
+        },
+        {
+            "name": "Turmeric Powder",
+            "amount": 0.25,
+            "unit": "tsp"
+        },
+        {
+            "name": "Coconut Cream",
+            "amount": 240,
+            "unit": "grams"
+        },
+        {
+            "name": "Water",
+            "amount": 120,
+            "unit": "grams"
+        },
+        {
+            "name": "Shallots",
+            "amount": 12,
+            "unit": "grams"
+        },
+        {
+            "name": "Garlic",
+            "amount": 15,
+            "unit": "grams"
+        },
+        {
+            "name": "Spring Onions (sliced)",
+            "amount": 20,
+            "unit": "grams"
+        },
+        {
+            "name": "Fish Sauce",
+            "amount": 40,
+            "unit": "grams"
+        },
+        {
+            "name": "Sesame Oil",
+            "amount": 10,
+            "unit": "grams"
+        },
+        {
+            "name": "Mung Bean Sprouts",
+            "amount": 450,
+            "unit": "grams"
+        },
+        {
+            "name": "Crab Meat (cooked)",
+            "amount": 340,
+            "unit": "grams"
+        }
+    ]
+}
+
+###
+
+# Adds a new recipe
+POST {{baseUrl}}/recipes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Chinese Pancakes",
+    "description": "A cross between spring rolls and crepes, best served with a side of soy sauce.",
+    "ratings": [3, 4, 5, 4, 3, 5],
+    "imageUrl": "https://img.koket.se/standard-giant/kinesiska-pannkakor-3.jpg.webp",
+    "timeInMins": 30,
+    "categories": [ "Asia"],
+    "instructions": [ "Whisk together the pancake batter. Let it swell for a while.", "Chop the onion and garlic and fry them in oil. Quickly fry with a little fat. Add the minced meat and crumble it with a fork. Season with salt and pepper. Simmer for 20 minutes. Finely slice the leek and Chinese cabbage. Fold them together with drained bean sprouts. Season with soy sauce and let it simmer slowly for about 20 minutes.",
+    "Bake small thin pancakes. Put a little filling on each pancake, roll them up, and serve them warm."],
+    "ingredients": [
+        {
+            "name": "Eggs",
+            "amount": 2,
+            "unit": "pieces"
+        },
+        {
+            "name": "Wheat Flour",
+            "amount": 2,
+            "unit": "dl"
+        },
+        {
+            "name": "Arla Medium Milk",
+            "amount": 5,
+            "unit": "dl"
+        },
+        {
+            "name": "Salt",
+            "amount": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "Onion (yellow)",
+            "amount": 1,
+            "unit": "piece"
+        },
+        {
+            "name": "Garlic (clove)",
+            "amount": 1,
+            "unit": "piece"
+        },
+        {
+            "name": "Minced Pork",
+            "amount": 300,
+            "unit": "grams"
+        },
+        {
+            "name": "Leek",
+            "amount": 1,
+            "unit": "piece"
+        },
+        {
+            "name": "Chinese Cabbage",
+            "amount": 1,
+            "unit": "small head"
+        },
+        {
+            "name": "Bean Sprouts",
+            "amount": 1,
+            "unit": "package"
+        }
+    ]
+}
+
+###
+# Searches through all recipes
+GET {{baseUrl}}/recipes?query=toas HTTP/1.1
+
+###
+
+# Fetches a single recipe
+GET {{baseUrl}}/recipes/63309a293120fd5bba986857 HTTP/1.1
+
+###
+
+# Deletes a recipe
+DELETE {{baseUrl}}/recipes/652eb6f899612c970cb89ba6 HTTP/1.1
+
+###
+
+# Updates a recipe
+PATCH {{baseUrl}}/recipes/63309a293120fd5bba986857 HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "Gott till apelsinsaft"
+}
+
+###
+
+# Fetches all categories
+GET {{baseUrl}}/categories HTTP/1.1
+
+###
+
+# Fetches all recipes in a specific category (Appetizer)
+GET {{baseUrl}}/categories/Förrätt/recipes HTTP/1.1
+
+###
+
+# Searches among recipes in a specific category
+GET {{baseUrl}}/categories/Förrätt/recipes?query=toa HTTP/1.1
+
+###
+
+# Adds a review (1-5) for a recipe
+POST {{baseUrl}}/recipes/63309a293120fd5bba986857/ratings
+Content-Type: application/json
+
+{
+    "rating": 1
+}
+###
+
+# Fetches all comments for a recipe
+GET {{baseUrl}}/recipes/651fea4d99612c970cb46d37/comments
+
+###
+
+# Adds a comment to a recipe
+POST {{baseUrl}}/recipes/651fea4d99612c970cb46d37/comments
+Content-Type: application/json
+
+{
+    "comment": "För mycket salt!",
+    "name": "Bosse"
+}
+
+###
+
+# Empties all data in the API
+GET {{baseUrl}}/clear HTTP/1.1
+
+###

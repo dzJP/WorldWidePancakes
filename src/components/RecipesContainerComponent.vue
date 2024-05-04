@@ -8,7 +8,7 @@
             </router-link>
             <div class="button-container">
                 <div class="button-wrapper">
-                    <CustomButton :to="'/recipe/' + recipe._id">Läs mer</CustomButton>
+                    <CustomButton :to="'/recipe/' + recipe._id">Read more</CustomButton>
                 </div>
             </div>
             <div class="recipe-details">
@@ -25,10 +25,10 @@
                 </div>
                 <div class="recipe-info">
                     <div class="recipe-info-item">
-                        Antal ingredienser: {{ recipe.ingredients.length }}
+                        Number of ingredients: {{ recipe.ingredients.length }}
                     </div>
                     <div class="recipe-info-item">
-                        Tid: {{ recipe.timeInMins }} mins
+                        Time: {{ recipe.timeInMins }} mins
                     </div>
                 </div>
             </div>
