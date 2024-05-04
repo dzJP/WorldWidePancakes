@@ -91,7 +91,7 @@ export default {
 	},
 };
 </script>
-  
+
 <style scoped>
 .main-box {
     display: grid;
