@@ -161,9 +161,16 @@ export default {
 }
 
 .recipe-image {
-    max-height: 800px;
+    max-width: 800px;
     max-height: 600px;
     object-fit: contain;
+}
+
+.recipe-instructions ol,
+.description-content,
+.recipe-ingredients ul {
+	max-width: 800px;
+	word-wrap: break-word;
 }
 
 .recipe-rating-container {
@@ -185,7 +192,7 @@ export default {
 }
 
 .section-recipe {
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 20px;
 }
 
